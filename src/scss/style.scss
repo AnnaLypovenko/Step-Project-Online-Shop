@@ -1,3 +1,5 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 @import "reset";
 @import "vars";
 @import "mixins";
@@ -19,8 +21,5 @@ a {
   text-decoration: none;
 
 }
-.container {
-  padding: 0 14%;
-  /*margin: 0 auto;*/
-}
+
 

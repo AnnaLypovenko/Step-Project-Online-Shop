@@ -18,6 +18,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-js-minify": "0.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "webpack-stream": "^5.2.1"

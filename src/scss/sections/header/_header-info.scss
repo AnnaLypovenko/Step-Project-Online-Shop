@@ -1,0 +1,53 @@
+
+
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 145px;
+  background-color: #363636;
+
+}
+
+.fa-mobile-alt {
+  font-size: 22px;
+  color: #d58e32;
+  margin-right: 9px;
+}
+.number {
+  font-size: 17px;
+}
+.number:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.basket {
+  position: relative;
+}
+.rectangle {
+  height: 49px;
+  width: 49px;
+}
+
+.fa-shopping-basket:before {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  font-size: 20px;
+  z-index: 1000;
+}
+.buy {
+
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  left: 45px;
+  background-color: #363636;
+  width: 30px;
+  height: 30px;
+}
+
+.number-basket {
+
+  font-size: 16px;
+}

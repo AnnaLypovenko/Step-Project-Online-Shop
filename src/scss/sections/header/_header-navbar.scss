@@ -1,0 +1,28 @@
+.header__navbar {
+  background-color: #434343;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+}
+
+
+.header__navbar a:hover {
+  border-bottom: 1px solid #ffffff;
+
+}
+
+.fa-user:before, .fa-lock:before  {
+  font-size: 14px;
+  margin-right: 9px;
+}
+
+.fa-user, .header__navbar__leftcurrency,
+.header__navbar__leftlang {
+  margin-right: 33px;
+}
