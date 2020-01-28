@@ -1,0 +1,26 @@
+@import "reset";
+@import "vars";
+@import "mixins";
+
+@import 'components/components';
+@import 'sections/sections';
+@import 'modals/modals';
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.container {
+  padding: 0 14%;
+  /*margin: 0 auto;*/
+}
+
