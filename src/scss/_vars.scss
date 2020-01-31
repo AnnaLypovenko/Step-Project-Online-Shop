@@ -17,3 +17,28 @@ $color-modal-text-light: #939393;
 $poppins: 'Poppins', sans-serif;
 
 $sale-popup-size: 21px;
+
+//Anna
+$primary: #d58e32;
+$secondary: #f4f5f7;
+$additional: #fbf3f7;
+$light-bg: #ffffff;
+$dark: #2a2a2a;
+$dark-bg-text-color: #A1A1A1;
+
+
+//цвета из библиотеки pretty checkbox
+$pretty--color-default:#bdc3c7;
+$pretty--color-primary:#428bca;
+$pretty--color-info:#5bc0de;
+$pretty--color-success:#5cb85c;
+$pretty--color-warning:#f0ad4e;
+$pretty--color-danger:#d9534f;
+$pretty--color-dark: #08090e;
+
+//breakpoints + media
+@media screen and(max-width: 768px) {
+  .btn {
+
+  }
+}

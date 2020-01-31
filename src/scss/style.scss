@@ -1,5 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
+@import "../../node_modules/pretty-checkbox/src/pretty-checkbox";
 @import "reset";
 @import "vars";
 @import "mixins";
@@ -21,5 +21,18 @@ a {
   text-decoration: none;
 
 }
+
+
+//@import "sections/general";
+//@import "sections/banners";
+//@import "sections/blog";
+//@import "sections/products";
+//@import "sections/filters";
+//@import "sections/subscribe";
+//@import "sections/footer";
+//
+//@import "components/btn";
+
+
 
 

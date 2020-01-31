@@ -1,0 +1,31 @@
+.footer {
+  color: $dark-bg-text-color;
+  display: flex;
+  background-color: $dark;
+  padding: 40px 0;
+
+  //@include tablet {
+  //  background-color: red;
+  //}
+  &__text {
+    text-align: right;
+    padding-right: 120px;
+    //p {
+    //  margin:0;
+    //}
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+
+      &:hover {
+        background-color: $primary;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+}
