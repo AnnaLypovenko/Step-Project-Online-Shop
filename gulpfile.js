@@ -49,8 +49,8 @@ const buildHTML = () => {
         .pipe(browserSync.stream())
 };
 const watch = () => {
-    gulp.watch('./src/scss/**/*.*', gulp.series(scssBuild));
-    gulp.watch('./src/*.html', gulp.series(buildHTML));
+    gulp.watch('./src/scss/**/*.scss', gulp.series(scssBuild));
+    gulp.watch('./src/**/*.html', gulp.series(buildHTML));
     gulp.watch('./src/js/*.js', gulp.series(jsBuild));
     browserSync.init({
         server: {
