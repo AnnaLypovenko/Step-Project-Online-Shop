@@ -4,9 +4,13 @@
   height: 85px;
 }
 
+.search {
+  position: relative;
+}
+
 .search input form {
   background: $text-color-white;
-  position: relative;
+
 }
 .search input, .search button {
   border: 1px solid $primary-light;
@@ -22,8 +26,8 @@
   height: 47px;
   width: 47px;
   position: absolute;
-  top: 0px;
-  right: 0;
+  top: 0;
+  right: 0px;
   cursor: pointer;
   border: none;
 }
