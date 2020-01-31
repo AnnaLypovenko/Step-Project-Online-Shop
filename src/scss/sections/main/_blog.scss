@@ -1,0 +1,35 @@
+.post {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #ccc;
+  //border: 1px solid #222;
+  //border-radius: 5px;
+  width: 300px;
+  height: 312px;
+
+  &--important {
+    background-color: yellow;
+  }
+
+  &__author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blue;
+  }
+
+  &__date {
+    float: right;
+  }
+
+  &__text {
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+.mt-large {
+  margin-top: 3rem;
+}
+.btn {
+  margin-left: 60px;
+}

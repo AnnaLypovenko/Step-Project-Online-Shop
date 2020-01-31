@@ -1,0 +1,50 @@
+
+.btn {
+  background-color: $dark;
+  color: #FFFFFF;
+  padding: 1rem 2.5rem;
+  transition: all .2s;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary;
+    color: #FFFFFF;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn_quick {
+  padding: 10px 6px;
+  font-size: 13px;
+}
+
+.btn_add {
+  padding: 10px 6px;
+  font-size: 13px;
+
+}
+.btn_price {
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 8px 10px;
+  background-color: #2a2a2a;
+  color: #FFFFFF;
+}
+.btn_send {
+  background-color: #FFFFFF;
+
+  border-radius: 4px;
+  padding: 17px;
+  align-content: baseline;
+}
+
+.btn_filter {
+  background-color: $primary;
+  padding: 8px 10px;
+  outline: none;
+}

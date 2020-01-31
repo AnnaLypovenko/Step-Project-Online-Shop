@@ -10,7 +10,6 @@ const gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     rigger = require('gulp-rigger'),
     newer = require('gulp-newer');
-
 const cleanDist = () => {
     return gulp.src('./dist', {read: false})
         .pipe(clean());

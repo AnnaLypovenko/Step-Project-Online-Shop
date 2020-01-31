@@ -1,0 +1,47 @@
+.stock__big-banner {
+  background: url("../../img/stocks/1.jpg") no-repeat;
+  width: 555px;
+  height: 420px;
+  color: #FFFFFF;
+
+  &__text {
+    bottom: 33px;
+    left: 33px;
+    position: absolute;
+    margin-top: 50px;
+  }
+}
+.stock {
+  &__small-banners {
+
+    &__banner1 {
+      background: url("../../img/stocks/BG.png") no-repeat;
+      display: block;
+      position: relative;
+      text-align: center;
+      width: 555px;
+      height: 195px;
+
+    }
+
+    &__banner2 {
+      background: url("../../img/stocks/BG_bed.png") no-repeat;
+      display: block;
+      position:relative;
+      text-align: center;
+      width: 555px;
+      height: 195px;
+    }
+  }
+
+  .banner1-text {
+    margin-top: 50px;
+    position: relative;
+
+  }
+}
+.discount {
+  padding: 8px;
+  width: 130px;
+  border: 5px solid white;
+}
