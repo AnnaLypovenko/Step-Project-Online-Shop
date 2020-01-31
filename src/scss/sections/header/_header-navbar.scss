@@ -1,28 +1,42 @@
-.header__navbar {
-  background-color: #434343;
-  color: #ffffff;
-  font-size: 14px;
+
+.head-navbar {
+  height: 145px;
+  background-color: $primary-dark;
 }
 
-.navbar-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 54px;
+.fa-mobile-alt {
+  font-size: 20px;
+  color: $secondary-light;
+  margin-right: 10px;
+}
+.basket {
+  position: relative;
+}
+
+.fa-shopping-basket:before {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  font-size: 20px;
+  z-index: 998;
+}
+.buy {
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  left: 45px;
+  background-color: $primary-dark;
+  width: 30px;
+  height: 30px;
+}
+.navbar-phone, .fa-shopping-basket, .number-basket {
+  color: $text-color-white;
+}
+.navbar-phone:hover, .fa-shopping-basket:hover {
+  color: $text-color-white;
+  border-bottom: 1px solid $text-color-white;
 }
 
 
-.header__navbar a:hover {
-  border-bottom: 1px solid #ffffff;
 
-}
 
-.fa-user:before, .fa-lock:before  {
-  font-size: 14px;
-  margin-right: 9px;
-}
-
-.fa-user, .header__navbar__leftcurrency,
-.header__navbar__leftlang {
-  margin-right: 33px;
-}

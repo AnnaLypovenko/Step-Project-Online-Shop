@@ -1,53 +1,32 @@
 
-
-.logo-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 145px;
-  background-color: #363636;
+.nav-info {
+  background-color: $primary-light;
+  height: 54px;
+  color: $text-color-white;
 
 }
-
-.fa-mobile-alt {
-  font-size: 22px;
-  color: #d58e32;
-  margin-right: 9px;
+.info>a, .user-login>a {
+  color: $text-color-white;
 }
-.number {
-  font-size: 17px;
-}
-.number:hover {
-  border-bottom: 1px solid #ffffff;
+.info>a:hover, .user-login>a:hover {
+  border-bottom: 1px solid $text-color-white;
 }
 
-.basket {
-  position: relative;
-}
-.rectangle {
-  height: 49px;
-  width: 49px;
+.info  {
+  color: $text-color-white;
+
+  &.info-item{
+    margin-right: 15px;
+  }
+
 }
 
-.fa-shopping-basket:before {
-  position: absolute;
-  top: 17px;
-  left: 16px;
-  font-size: 20px;
-  z-index: 1000;
-}
-.buy {
+.info-item{
+  margin-right: 15px;}
 
-  position: absolute;
-  border-radius: 50%;
-  top: 10px;
-  left: 45px;
-  background-color: #363636;
-  width: 30px;
-  height: 30px;
+.fa-user:before, .fa-lock:before  {
+  margin-right: 10px;
+  margin-left: 25px;
 }
 
-.number-basket {
 
-  font-size: 16px;
-}

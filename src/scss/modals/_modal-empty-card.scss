@@ -1,6 +1,4 @@
-.modal-login-background {
-  //width: 656px;
-  //height: 491px;
+.modal-empty-card-background {
   display: none;
   position: fixed;
   top: 50%;
@@ -14,32 +12,15 @@
   //filter: blur(5px);
 }
 
-.modal-login {
+.modal-empty-card {
   position: relative;
-  width: 456px;
-  height: 398px;
+  width: 1140px;
+  height: 261px;
   margin: 20px auto;
   box-shadow: 0 0 5px $text-color-dark;
   background-color: $text-color-white;
-}
-
-.modal-login-wrap {
-  width: 362px;
-  margin: 0 auto;
-
-
-  &__form-caption {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    color: $text-color-dark;
-  }
-
-  &__form {
-    margin-bottom: 17px;
-  }
+  color: $color-modal-text-light;
+  line-height: 2;
 
   &__cross {
     display: flex;
@@ -53,27 +34,20 @@
     height: 37px;
   }
 
-  input {
-    height: 51px;
-    border: 1px solid  $color-modal-decorative-elements;
-    border-radius: inherit;
-
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
   }
-}
 
-
-
-
-.btn-primary {
-  width: fit-content;
-  padding: 10px 20px;
-  background-color: $color-modal-decorative-elements;
-  border-color: $color-modal-decorative-elements;
+  &__subtitle {
+    font-size: 18px;
+  }
 }
 
 .fa-times:before {
   color: $text-color-white;
   font-size: 26px;
-
-
 }
+
+
+
