@@ -1,10 +1,10 @@
 <section class="products container">
-    <h5 class="product-title">FURNITURE</h5>
+    <p class="product-title">FURNITURE</p>
     <hr>
 
 
     <div class="chairs-row row">
-        <div class="col-lg-9 furniture ">
+        <div class="col-lg-9 furniture no-side-padding">
             <div class="container my-products">  <!--контейнер для карточек товара -->
                 <div class="card-collection-1 row">
                     <hr>
@@ -116,6 +116,56 @@
                         </div>
                     </div>
                 </div><!--/row-->
+
+                <div class="card-collection-3 row">
+                    <div class="card-7 col-4">
+                        <div class="card_pic"><img src="../img/products/chairs/Image (7).png" height="252" width="252"/>
+                        </div>
+                        <div class="card-describe">
+                            <p>Aenean Ru Bristique</p>
+                            <div class="stars"><img src="img/products/chairs/Star.png" height="15" width="83"/></div>
+                            <hr>
+                            <div class="card_bottom">
+                                <div class="heart-arrow">
+                                    <p><i class="far fa-heart"></i></p>
+                                    <p><i class="fas fa-exchange-alt"></i></p></div>
+                                <div class="btn_price">$15.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-8 col-4">
+                        <div class="card_pic"><img src="../img/products/chairs/Image (8).png" height="260" width="262"/>
+                        </div>
+                        <div class="card-describe">
+                            <p class="card_text">Aenean Ru Bristique</p>
+                            <div class="stars"><img src="img/products/chairs/Star.png" height="15" width="83"/></div>
+                            <hr>
+                            <div class="card_bottom">
+                                <div class="heart-arrow">
+                                    <p><i class="far fa-heart"></i></p>
+                                    <p><i class="fas fa-exchange-alt"></i></p></div>
+                                <div class="btn_price">$15.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-9 col-4">
+                        <div class="card_pic"><img src="../img/products/chairs/Image (9).png" height="249" width="225"/>
+                        </div>
+                        <div class="card-describe">
+                            <p>Aenean Ru Bristique</p>
+                            <div class="stars"><img src="img/products/chairs/Star.png" height="15" width="83"/></div>
+                            <hr>
+                            <div class="card_bottom">
+                                <div class="heart-arrow">
+                                    <p><i class="far fa-heart"></i></p>
+                                    <p><i class="fas fa-exchange-alt"></i></p></div>
+                                <div class="btn_price">$25.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/row-->
             </div><!--container-->
         </div>
 
@@ -124,15 +174,15 @@
 
             <div class="filters-global">
                 <div class="filter-by-categories">
-                    <h6 class="filter-title">FILTER BY CATEGORIES</h6>
+                    <p class="filter-title">FILTER BY CATEGORIES</p>
                     <hr>
 
                     <ul>
-                        <li> >  Furniture <span class="p-round p-smooth p-bigger p-warning"></span></li>
-                        <li> >  Sofa</li>
-                        <li> >  Chair</li>
-                        <li> >  Table</li>
-                        <li> >  Bedroom</li>
+                        <li class="li-round"> >  Furniture <span class="round">3</span> </li>
+                        <li class="li-round"> >  Sofa <span class="round">2</span></li>
+                        <li class="li-round"> >  Chair <span class="round">3</span> </li>
+                        <li class="li-round"> >  Table <span class="round">1</span> </li>
+                        <li class="li-round"> >  Bedroom <span class="round"> 1</span> </li>
                     </ul>
 
                 </div>
@@ -140,9 +190,18 @@
                 <div class="filter-by-price">
                     <h6 class="filter-title">FILTER BY PRICE</h6>
                     <hr>
-                    <input type="range" min="0" max="100" step="2" value="" oninput="func1()" id="r1">range
+                                      <!--!!!!!!! слайдер range-->
+                    <div id="slider-range"></div>
+                    <p>
+                        <label for="amount">Price range:</label>
+                        <input type="text" id="amount" readonly style="color: black; font-weight:bold;">
+                    </p>
+
+                                   <!--!!!!!!! заканчивается слайдер range-->
                 </div>
-                <div class="btn_filter">FILTER</div>
+                <input type="button" value="FILTER" class="btn_filter">
+
+
 
 
                 <div class="filter-by-color">
@@ -190,7 +249,7 @@
                     <br>
                     <div class="pretty p-svg p-curve">
                         <input type="checkbox"/>
-                        <div class="state pretty-color-dark black">
+                        <div class="state pretty--color-dark">
                             <!-- svg path -->
                             <svg class="svg svg-icon" viewBox="0 0 20 20">
                                 <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
@@ -213,55 +272,79 @@
                             <label>Orange</label>
                         </div>
                     </div>
+                    <br>
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox"/>
+                        <div class="state p-danger">
+                            <!-- svg path -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                      style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>Pink</label>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!--                <div class="filter-by-color">-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="">Red-->
-                <!--                        </label>-->
-
-                <!--                    </div>-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="">Black-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="" disabled>Yellow-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="" disabled>Blue-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="" disabled>Pink-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="" disabled>Yellow-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                    <div class="form-check">-->
-                <!--                        <label class="form-check-label">-->
-                <!--                            <input type="checkbox" class="form-check-input" value="" disabled>Green-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                </div>-->
 
                 <div class="filter-by-class">
                     <h6 class="filter-title">FILTER BY SIZE</h6>
                     <hr>
+
+                    <div class="pretty p-icon p-curve p-jelly">
+                        <input type="radio" name="radio66">
+                        <div class="state p-warning">
+                            <i class="icon mdi mdi-check"></i>
+                            <label> S</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="pretty p-icon p-curve p-jelly">
+                        <input type="radio" name="radio66">
+                        <div class="state p-warning">
+                            <i class="icon mdi mdi-check"></i>
+                            <label class="size-round"> M </label> <span class="round"> 3 </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="pretty p-icon p-curve p-jelly">
+                        <input type="radio" name="radio66">
+                        <div class="state p-warning">
+                            <i class="icon mdi mdi-check"></i>
+                            <label> L</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="pretty p-icon p-curve p-jelly">
+                        <input type="radio" name="radio66">
+                        <div class="state p-warning">
+                            <i class="icon mdi mdi-check"></i>
+                            <label> XL</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="pretty p-icon p-curve p-jelly">
+                        <input type="radio" name="radio66">
+                        <div class="state p-warning">
+                            <i class="icon mdi mdi-check"></i>
+                            <label> XXL</label>
+                        </div>
+                    </div>
+                    <br>
+
                 </div>
 
                 <div>
                     <h6 class="filter-title">FILTER BY TAGS</h6>
+                    <hr>
+                    <p class="tags"><i class="fas fa-tags"> Table</i></p>
+                    <p class="tags"><i class="fas fa-tags"> Chair</i></p>
+                    <p class="tags"><i class="fas fa-tags"> Hand Bag</i></p>
+                    <p class="tags"><i class="fas fa-tags"> Woman</i></p>
+                    <p class="tags"><i class="fas fa-tags"> Fashion</i></p>
+                    <p class="tags"><i class="fas fa-tags"> Clothes</i></p>
+
+
                     <hr>
                 </div>
             </div>

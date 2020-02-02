@@ -2,23 +2,46 @@
   background: url("../../img/stocks/1.jpg") no-repeat;
   width: 555px;
   height: 420px;
-  color: #FFFFFF;
+  color: $text-color-white;
 
   &__text {
-    bottom: 33px;
-    left: 33px;
+    bottom: 54px;
+    left: 54px;
     position: absolute;
-    margin-top: 50px;
+
+    .text-title-small {
+      font-size: 36px;
+      padding-bottom: 6px;
+      font-weight: bolder;
+
+    }
+    .text-title-big {
+      font-size: 60px;
+      font-weight: bold;
+      padding-bottom: 6px;
+    }
+        .text-discount {
+        padding: 15px 12px ;
+        border: 5px solid white;
+        font-size: 50px;
+          font-weight: bolder;
+          display: inline-block;
+
+      }
+    }
   }
-}
+
+
 .stock {
+  margin-top: 30px;
+
   &__small-banners {
 
     &__banner1 {
       background: url("../../img/stocks/BG.png") no-repeat;
       display: block;
       position: relative;
-      text-align: center;
+
       width: 555px;
       height: 195px;
 
@@ -27,21 +50,70 @@
     &__banner2 {
       background: url("../../img/stocks/BG_bed.png") no-repeat;
       display: block;
-      position:relative;
-      text-align: center;
+      position: relative;
+      margin-top: 20px;
       width: 555px;
       height: 195px;
+    }
+
+    .text-orange {
+      font-weight: bold;
+      font-size: 24px;
+
     }
   }
 
   .banner1-text {
-    margin-top: 50px;
-    position: relative;
+
+    position: absolute;
+    color: $primary-dark;
+    right: 0;
+    left: 175px;
+    top: 50px;
+
+  }
+
+  .banner2-text {
+    position: absolute;
+    color: $primary-dark;
+    font-size: 18px;
+    right: 30px;
+    top: 76px;
+  }
+
+  .banner2-text-title {
+    color: $secondary-dark;
+    font-size: 22px;
+    padding-bottom: 6px;
+
+  }
+  .banner2-text-title-small {
+    font-size: 18px;
+    text-align: right;
+  }
+
+
+  .banner1-text-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+
+  .banner1-text-title-light {
+    font-weight: normal;
+
+  }
+
+  .price-orange {
+    color: $secondary-dark;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .banner1-text-title-small {
+    font-size: 18px;
+    letter-spacing: 4px;
 
   }
 }
-.discount {
-  padding: 8px;
-  width: 130px;
-  border: 5px solid white;
-}
+
