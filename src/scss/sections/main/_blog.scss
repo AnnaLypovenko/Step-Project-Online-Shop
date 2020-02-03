@@ -7,23 +7,30 @@
   width: 300px;
   height: 312px;
 
-  &--important {
-    background-color: yellow;
+  //&--important {
+  //  background-color: yellow;
+  //}
+  .orange-indicators {
+    text-decoration-color: #d58e32;
+    color: #d58e32;
+    position: absolute;
   }
-
-  &__author {
+  li {
+    color: #d58e32;
+  }
+  &__date {
     font-size: 1.2rem;
     font-weight: bold;
     color: blue;
   }
 
-  &__date {
+  &__comments {
     float: right;
   }
 
   &__text {
-    line-height: 2rem;
-    font-size: 1.3rem;
+    color: $text-color-dark;
+    font-size: 14px;
   }
 }
 

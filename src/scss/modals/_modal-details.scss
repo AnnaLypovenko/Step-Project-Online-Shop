@@ -1,0 +1,90 @@
+.modal-row {
+  margin-top: 65px;
+  margin-left: 5px;
+}
+.modal-header {
+  font-size: 22px;
+  font-weight: bolder;
+
+}
+.modal-stars {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+button.modal-close-custom{
+  background-color: $black;
+  padding: 10px;
+  position: absolute;
+  top:0;
+  right:0;
+  color: $text-color-white;
+  opacity: 1;
+
+}
+.modal-col-4 {
+  margin-top: 20px;
+}
+.modal-header .close {
+  padding: 14px;
+  margin: -16px -16px -16px auto;
+}
+.modal-add-button {
+  display: inline-block;
+  font-size: 13px;
+  width:  inherit;
+  padding: 11px;
+  background-color: black;
+  color: $text-color-white;
+  margin-bottom: 8px;
+}
+.b-icon {
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 7px;
+}
+.overview {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.modal-text {
+  font-size: 13px;
+  color: $grey-text-color;
+}
+.in-stock {
+  font-size: 14px;
+}
+.in-stock>span {
+  font-size: 12px;
+}
+.modal-hr {
+  margin: 0 auto;
+}
+.modal-body.no-top-padding {
+  padding-top: 0;
+}
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+p{
+  margin-bottom: 9px;
+}
+.tags {
+  margin-left: 0;
+  font-size: 13px;
+}
+.modal-footer {
+  justify-content: flex-start;
+}
+.col-8:hover .modal-add-button {
+  background-color: $secondary-dark;
+
+}
+.modal-content:hover .modal-close-custom {
+  background-color: $secondary-dark;
+
+}
+.tags:hover {
+  background-color: $blue-color-bg;
+  color: $text-color-white;
+}
