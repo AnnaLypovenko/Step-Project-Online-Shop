@@ -10,6 +10,7 @@
 }
 .prod-pic {
   position: relative;
+  width: 100%;
 }
 .product-title {
   font-size: 24px;
@@ -20,6 +21,10 @@
 .col-4:hover .card-black-buttons {
   display: block;
 }
+.btn_quick:hover {
+  background-color: $secondary-dark;
+}
+
 .col-4:hover .card-describe_title {
   color: $secondary-dark;
 }
@@ -61,7 +66,12 @@
 .card-collection-2 {
   margin-bottom: 15px;
 }
-
+.filters {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
 .filter-title {
   font-weight: bold;
   font-size: 16px;
@@ -182,3 +192,4 @@ color: $secondary-dark;
   margin-top: 50px;
   cursor: pointer;
 }
+
