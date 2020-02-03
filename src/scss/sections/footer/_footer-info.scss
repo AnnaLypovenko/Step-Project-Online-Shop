@@ -1,34 +1,40 @@
-//.subscribe-user-info {
-//  //margin-top: 60px;
-//  //height: 334px;
-//  &_container {
-//    color: white;
-//  }
-//}
-//.sender {
-//  display: inline-block;
-//  position: center;
-//}
-//.text {
-//  margin: 30px;
-//}
-//.contacts {
-//}
-//.orders {
-//}
-//.title-info {
-//  font-size: 16px;
-//  height: 100%;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//}
-//.title-bottom {
-//  font-size: 16px;
-//}
-//.we-accept {
-//  display: flex;
-//}
-//.e-mail {
-//  margin-right: 60px;
-//}
+.footer {
+  background-color:$primary-light;
+}
+.footer-info {
+  color: $dark-bg-text-color;
+
+
+  padding: 30px 0;
+}
+
+
+.sender {
+  display: inline-block;
+  position: center;
+}
+.text {
+  margin: 30px;
+}
+.title-info {
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts {
+  color: $grey-text-color;
+  margin: 30px auto;
+}
+.title-bottom {
+  color: $text-color-white;
+  font-size: 22px;
+  margin: 35px auto;
+}
+
+.we-accept {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
