@@ -3,11 +3,22 @@
   width: 555px;
   height: 420px;
   color: $text-color-white;
+  &__overlay {
 
+    margin: 32px auto;
+    width: 489px;
+    height: 355px;
+    background-color: black;
+    opacity: 0.3;
+  }
   &__text {
     bottom: 54px;
     left: 54px;
     position: absolute;
+
+    &__text:hover {
+      color: $text-color-white;
+    }
 
     .text-title-small {
       font-size: 36px;
