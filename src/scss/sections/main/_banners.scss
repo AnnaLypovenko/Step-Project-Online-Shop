@@ -6,14 +6,13 @@
 
   &__overlay {
     margin: 32px auto;
-    width: 80%;
+    width: 90%;
     height: 355px;
     background-color: black;
     opacity: 0.3;
   }
-
   &:hover {
-    color: $secondary-dark;
+    color: $text-color-white;
   }
 
   &__text {

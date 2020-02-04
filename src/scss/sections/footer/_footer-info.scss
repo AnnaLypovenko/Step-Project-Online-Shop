@@ -3,12 +3,20 @@
 }
 .footer-info {
   color: $dark-bg-text-color;
-
-
   padding: 30px 0;
 }
 
+.link-name {
+  color: $dark-bg-text-color;
 
+}
+.link-name>p:hover {
+  color: $dark-bg-text-color;
+  border-bottom: 1px solid $dark-bg-text-color;
+  display: inline-block;
+
+  //text-decoration: underline;
+}
 .sender {
   display: inline-block;
   position: center;

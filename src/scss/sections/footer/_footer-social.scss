@@ -18,6 +18,13 @@
     }
   }
 }
+.orange-icon:hover {
+  color: $secondary-dark;
+}
+.footer-item>.fa-twitter:hover {
+  stroke: #d58e32;
+  fill: rebeccapurple;
+}
   //
   //@include tablet {
   //  background-color: red;

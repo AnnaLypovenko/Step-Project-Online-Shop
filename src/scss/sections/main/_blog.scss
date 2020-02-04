@@ -10,30 +10,23 @@
   width: 300px;
   height: 312px;
 
-  //&--important {
-  //  background-color: yellow;
-  //}
-  .orange-indicators {
-    text-decoration-color: #d58e32;
-    color: #d58e32;
-    position: absolute;
-  }
-  li {
-    color: #d58e32;
-  }
-  &__date {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: blue;
+  &--important {
+    background-color: yellow;
   }
 
-  &__comments {
+  &__author {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+  }
+
+  &__date {
     float: right;
   }
 
   &__text {
-    color: $text-color-dark;
-    font-size: 14px;
+    line-height: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -43,3 +36,79 @@
 .btn {
   margin-left: 60px;
 }
+
+//
+///* Container */
+//.container-fluid {
+//  background: #FFFFFF;
+//  margin: 40px auto 10px;
+//  padding: 20px 40px 0;
+//  max-width: 960px;
+//  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+//}
+//
+//
+//
+///* Thumbnail Box */
+//.caption h4 {
+//  font-size: 1rem;
+//  color: #444;
+//}
+//.caption p {
+//  font-size: 0.75rem;
+//  color: #999;
+//}
+//.btn.btn-mini {
+//  font-size: 0.63rem;
+//}
+//
+//
+///* Carousel Control */
+//.control-box {
+//  text-align: right;
+//  width: 100%;
+//}
+//.carousel-control{
+//  background: #666;
+//  border: 0px;
+//  border-radius: 0px;
+//  display: inline-block;
+//  font-size: 34px;
+//  font-weight: 200;
+//  line-height: 18px;
+//  opacity: 0.5;
+//  padding: 4px 10px 0px;
+//  position: static;
+//  height: 30px;
+//  width: 15px;
+//}
+//
+//
+///* Footer */
+//.footer {
+//  margin: auto;
+//  width: 100%;
+//  max-width: 960px;
+//  display: block;
+//  font-size: 0.69rem;
+//}
+//.footer, .footer a {
+//  color: #c9e4f7;
+//}
+//p.right  {
+//  float: right;
+//}
+
+
+/* Mobile Only */
+@media (max-width: 767px) {
+  .page-header, .control-box {
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  .caption {
+    word-break: break-all;
+  }
+}
+
