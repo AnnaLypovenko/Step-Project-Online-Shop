@@ -1,20 +1,39 @@
-<div class="modal-register-background">
-    <div class="modal-register">
-        <form class="modal-register-wrap d-flex flex-column align-items-center">
-            <div class="modal-register-wrap__inner d-flex flex-column w-100">
-                <span class="modal-register-wrap__form-caption">registration</span>
-                <div class="modal-register-wrap__form w-100">
-                    <input type="text" placeholder="Name*" class="form-control" id="exampleInputName">
-                </div>
-                <div class="modal-register-wrap__form w-100">
-                    <input type="email" placeholder="Email*" class="form-control" id="exampleInputEmail1">
-                </div>
-                <div class="modal-register-wrap__form w-100">
-                    <input type="password" placeholder="Password*" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <div class="own-modal-content modal-content">
+            <button type="button" data-dismiss="modal" aria-label="close" class="modal-register-cross">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class=" own-modal-header modal-header ">
+                <h4 class=" own-modal-title modal-title text-uppercase w-100 font-weight-bold">registration</h4>
             </div>
-            <div class="modal-register-wrap__cross"><i class="fas fa-times"></i></div>
-        </form>
+
+
+            <div class="own-modal-body modal-body mx-3">
+                <div class="own-md-form  mb-5">
+                    <input type="email" placeholder="Name*" id="defaultRegisterForm-name" class="own-form-control form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultRegisterForm-email"></label>
+                </div>
+
+                <div class="own-md-form  mb-5">
+                    <input type="email" placeholder="Email*" id="defaultRegisterForm-email" class="own-form-control form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultRegisterForm-email"></label>
+                </div>
+
+                <div class="own-md-form md-form mb-4">
+                    <input type="password" placeholder="Password*" id="defaultRegisterForm-pass" class="own-form-control form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultRegisterForm-pass"></label>
+                </div>
+
+            </div>
+            <div class=" own-modal-footer modal-footer">
+                <button class="btn own-btn-default text-uppercase btn-default">Login</button>
+            </div>
+
+
+        </div>
     </div>
 </div>
+

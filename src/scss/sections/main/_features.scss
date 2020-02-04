@@ -1,0 +1,79 @@
+.row {
+  margin-top: 70px;
+}
+.features-block {
+  position: relative;
+  border: 1px solid $color-modal-background;
+
+&__icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $color-modal-background;
+  padding: 5px;
+  border-radius: 50%;
+
+}
+
+ &__icon:before {
+   position: absolute;
+   top: 20px;
+   left: 19px;
+
+
+ }
+
+  &__title {
+    line-height: 2;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 36px;
+  }
+  &__subtitle{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+
+}
+
+.fa-truck, .fa-headphones, .fa-reply-all,
+.fa-bullhorn {
+  position: absolute;
+  top: -28%;
+  left: 38%;
+  font-size: 20px;
+  background-color: $text-color-white;
+}
+
+.features-block:hover {
+  cursor: pointer;
+}
+
+.features-block:hover .fa-truck {
+  color: $text-color-white;
+  background:$secondary-dark;
+}
+
+.features-block:hover .fa-headphones {
+  color: $text-color-white;
+  background:$secondary-dark;
+}
+
+.features-block:hover .fa-reply-all {
+  color: $text-color-white;
+  background:$secondary-dark;
+}
+
+.features-block:hover .fa-bullhorn {
+  color: $text-color-white;
+  background:$secondary-dark;
+}
+
+.features-block:hover .features-block__title {
+  color:$additional-pink;
+}
+
+.features-block:hover .features-block__subtitle {
+  color:$additional-pink;
+}

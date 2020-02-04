@@ -1,0 +1,38 @@
+.gallery-item {
+  background-color: $gallery-background;
+
+&__price-text {
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+
+  &__price {
+    font-size: 42px;
+    font-weight: bold;
+    color: $gallery-button-color;
+  }
+
+  &__description {
+    font-weight: bold;
+    font-size: 42px;
+    color: $secondary-dark;
+  }
+  &__button {
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: $gallery-button-color;
+    color: $text-color-white;
+    font-weight: bold;
+    border: none;
+    padding: 21px 32px;
+    border-radius: 3px;
+    //margin: 35px 358px 340px 62px;
+  }
+  &__background {
+   object-fit: contain;
+  }
+}
+.own-fa-dollar:before {
+  color: $gallery-button-color;
+}
