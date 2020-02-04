@@ -16,88 +16,95 @@
     height: 37px;
   }
 
-
-.bear-chair-section {
-  border: 1px solid $color-modal-background;
-  margin: 35px;
-  padding: 15px;
-  border-radius: 6px;
-
-  &__product-picture {
-    width: 229px;
-    height: 169px;
-  }
+.own-row {
+margin-top: 0;
+  width: 100%;
 }
-
-.bear-chair-costumer-info {
-
-  &__caption {
-    font-size: 30px;
-    font-weight: bold;
-    color: $text-color-dark;
+  .modal-cart {
+    border: 1px solid $color-modal-background;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 25px;
   }
 
-  &__price {
-    font-size: 16px;
+  .bear-chair-section {
 
-    &_normal {
-      padding: 9px;
-    }
-
-    &_discount {
-      padding: 9px;
-      background-color: $color-modal-decorative-elements;
-      color: $text-color-white;
+    &__product-picture {
+      width: 229px;
+      height: 169px;
     }
   }
 
-  &__quantity {
-    &_text {
+  .bear-chair-costumer-info {
+
+    &__caption {
+      font-size: 30px;
       font-weight: bold;
-      font-size: 14px;
+      color: $text-color-dark;
     }
 
-    &_count {
-      width: 73px;
-      border: 1px solid $primary-dark;
+    &__price {
+      font-size: 16px;
+
+      &_normal {
+        padding: 9px;
+      }
+
+      &_discount {
+        padding: 9px;
+        background-color: $color-modal-decorative-elements;
+        color: $text-color-white;
+      }
     }
 
-    &_minus {
-      width: 40px;
-      border: 1px solid $primary-dark;
+    &__quantity {
+      &_text {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      &_count {
+        width: 73px;
+        border: 1px solid $primary-dark;
+      }
+
+      &_minus {
+        width: 40px;
+        border: 1px solid $primary-dark;
+      }
+
+      &_plus {
+        width: 40px;
+        border: 1px solid $secondary-dark;
+      }
     }
 
-    &_plus {
-      width: 40px;
-      border: 1px solid $secondary-dark;
+    &__sum {
+      &_text {
+        font-size: 16px;
+        color: $color-modal-background;
+      }
+      &_price {
+        font-weight: bold;
+        font-size: 18px;
+        color: $text-color-dark;
+      }
     }
-  }
 
-&__sum {
-  &_text {
-    font-size: 16px;
-    color: $color-modal-background;
-  }
-  &_price {
-    font-weight: bold;
-    font-size: 18px;
-    color: $text-color-dark;
-  }
+
+
 }
-
-
-}
-
-
-.fa-times:before {
-
-  //font-size: 26px;
-}
-//.fa-dollar-sign:before {
-//  color: $text-color-dark;
-//  font-size: 18px;
+//
+//
+//.fa-times:before {
+//
+//  //font-size: 26px;
 //}
-
-.modal-dialog {
-       //max-width: 100%;
-}
+////.fa-dollar-sign:before {
+////  color: $text-color-dark;
+////  font-size: 18px;
+////}
+//
+//.modal-dialog {
+//       //max-width: 100%;
+//}
