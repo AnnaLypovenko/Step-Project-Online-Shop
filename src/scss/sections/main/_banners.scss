@@ -46,6 +46,9 @@
 
 .stock {
   margin-top: 30px;
+  @include tablet {
+    align-self: center;
+  }
 
   &__small-banners {
 

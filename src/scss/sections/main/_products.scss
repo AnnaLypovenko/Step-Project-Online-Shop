@@ -1,4 +1,6 @@
-
+.chairs-row {
+  margin-top: -40px;
+}
 .products {
   padding: 0;
   margin-top: 60px;
@@ -8,6 +10,20 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+.card3 {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+.card3 {
+  display: block;
+  @include mobile-landscape {
+    display: none;
+  }
+}
+
 .prod-pic {
   position: relative;
   width: 100%;
@@ -15,20 +31,27 @@
 .product-title {
   font-size: 24px;
 }
-.col-4:hover .radius {
+.fa-shopping-basket {
+  position: absolute;
+
+  left: 125px;
+  bottom: 43px;
+  font-size: small;
+}
+.col-xl-4:hover .radius {
   display: block;
 }
-.col-4:hover .card-black-buttons {
+.col-xl-4:hover .card-black-buttons {
   display: block;
 }
 .btn_quick:hover {
   background-color: $secondary-dark;
 }
 
-.col-4:hover .card-describe_title {
+.col-xl-4:hover .card-describe_title {
   color: $secondary-dark;
 }
-.col-4:hover .btn_price {
+.col-xl-4:hover .btn_price {
   background-color: $secondary-dark;
 }
 .card-hr:after {
@@ -66,6 +89,34 @@
 .card-collection-2 {
   margin-bottom: 15px;
 }
+.product-title-block {
+  display: flex;
+  justify-content: space-between;
+}
+.furniture-hr {
+  color: black;
+
+}
+.tablet-filter-bars {
+  //display: none;
+  border: 1px solid black;
+  padding: 9px;
+  display: inline-block;
+  visibility: hidden;
+  //box-sizing: content-box;
+  @include tablet {
+       visibility: visible;
+  }
+}
+.fa-bars {
+  padding-right: 5px;
+}
+.filters {
+  display: block ;
+@include mobile-landscape {
+  display: block;
+}
+}
 .filters {
   display: block;
   @include tablet {
@@ -76,10 +127,7 @@
   font-weight: bold;
   font-size: 16px;
 }
-.filter-range {
 
-
-}
 .filter-title>.tags-filter:hover {
   border: $secondary-dark;
 color: $secondary-dark;
@@ -173,6 +221,9 @@ color: $secondary-dark;
   font-size: 18px;
   margin-top: 10px;
   text-decoration: line-through black;
+  @include tablet {
+    display: none;
+  }
 
 }
 .b-icon {

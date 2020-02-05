@@ -8,9 +8,12 @@
 
 .link-name {
   color: $dark-bg-text-color;
+  display: block;
+  text-decoration: none;
+
 
 }
-.link-name>p:hover {
+.link-name>:hover {
   color: $dark-bg-text-color;
   border-bottom: 1px solid $dark-bg-text-color;
   display: inline-block;
