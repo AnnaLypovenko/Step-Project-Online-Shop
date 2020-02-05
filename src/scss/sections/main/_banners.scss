@@ -43,7 +43,11 @@
     }
   }
 
-
+.stock__big-banner {
+  @include mobile {
+    display: none;
+  }
+}
 .stock {
   margin-top: 30px;
   @include tablet {

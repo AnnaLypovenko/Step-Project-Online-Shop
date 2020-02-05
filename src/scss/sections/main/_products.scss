@@ -10,7 +10,11 @@
   padding-left: 0;
   padding-right: 0;
 }
-
+.card-pic {
+  @include mobile {
+    width: available;
+  }
+}
 .card3 {
   display: block;
   @include tablet {
