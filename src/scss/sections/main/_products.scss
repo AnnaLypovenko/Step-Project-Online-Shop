@@ -15,15 +15,20 @@
 
 .card-pic {
   @include mobile {
-
+     margin-right: auto;
+    margin-left: auto;
   }
 }
 
-.card3 {
+.card3, .card-6, .card-9 {
+  @include tablet-landscape {
+    //display: none;
+  }
+}
 
+.card3,.card-6,.card-9 {
   @include tablet {
-    opacity: 0;
-    height: 0;
+    display: none;
   }
 }
 
@@ -125,6 +130,9 @@
   @include tablet {
     visibility: visible;
   }
+  @include tablet-landscape {
+    visibility: visible;
+  }
 }
 
 .fa-bars {
@@ -138,6 +146,7 @@
   }
 }
 
+
 .filters {
   display: block;
   @include tablet {
@@ -147,7 +156,7 @@
 
 .filters {
   display: block;
-  @include tablet-landscape {
+  @include tablet-landscape{
     display: none;
   }
 }

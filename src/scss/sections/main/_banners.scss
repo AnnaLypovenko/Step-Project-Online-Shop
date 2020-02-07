@@ -49,10 +49,17 @@
     display: none;
   }
 }
+.stock__big-banner {
+  @include tablet-landscape {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .stock {
   margin-top: 30px;
   @include tablet {
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__small-banners {
@@ -73,6 +80,8 @@
       display: block;
       position: relative;
       margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
       width: 555px;
       height: 195px;
     }
