@@ -1,6 +1,4 @@
-.row {
-  margin-top: 70px;
-}
+
 .features-block {
   position: relative;
   border: 1px solid $color-modal-background;
@@ -9,7 +7,6 @@
   width: 60px;
   height: 60px;
   border: 1px solid $color-modal-background;
-  padding: 5px;
   border-radius: 50%;
 
 }
@@ -41,7 +38,6 @@
 .fa-bullhorn {
   position: absolute;
   top: -28%;
-  left: 38%;
   font-size: 20px;
   background-color: $text-color-white;
 }
@@ -77,3 +73,17 @@
 .features-block:hover .features-block__subtitle {
   color:$additional-pink;
 }
+
+@media (min-width: 769px) and (max-width: 1200px){
+  .features-section {
+    padding-top:50px;
+  }
+}
+
+@media  (max-width: 768px) {
+  .features-section {
+    padding-top:50px;
+  }
+
+}
+

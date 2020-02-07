@@ -40,6 +40,9 @@
   border-bottom: 1px solid $text-color-white;
 }
 
-
-
-
+@media (max-width: 480px) {
+  .fa-mobile-alt {
+    display: none;
+  }
+  
+}

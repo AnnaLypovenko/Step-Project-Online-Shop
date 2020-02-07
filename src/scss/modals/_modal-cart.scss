@@ -16,10 +16,7 @@
     height: 37px;
   }
 
-.own-row {
-margin-top: 0;
-  width: 100%;
-}
+
   .modal-cart {
     border: 1px solid $color-modal-background;
     padding: 15px;
@@ -30,7 +27,7 @@ margin-top: 0;
   .bear-chair-section {
 
     &__product-picture {
-      width: 229px;
+      display: inline-block;
       height: 169px;
     }
   }
@@ -41,6 +38,9 @@ margin-top: 0;
       font-size: 30px;
       font-weight: bold;
       color: $text-color-dark;
+      white-space: nowrap;
+
+
     }
 
     &__price {
@@ -61,6 +61,7 @@ margin-top: 0;
       &_text {
         font-weight: bold;
         font-size: 14px;
+        padding-right: 35px;
       }
 
       &_count {
@@ -90,21 +91,4 @@ margin-top: 0;
         color: $text-color-dark;
       }
     }
-
-
-
 }
-//
-//
-//.fa-times:before {
-//
-//  //font-size: 26px;
-//}
-////.fa-dollar-sign:before {
-////  color: $text-color-dark;
-////  font-size: 18px;
-////}
-//
-//.modal-dialog {
-//       //max-width: 100%;
-//}

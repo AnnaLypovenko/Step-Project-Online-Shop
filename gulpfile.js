@@ -25,7 +25,8 @@ const scssBuild = () => {
         .pipe(browserSync.stream())
 };
 const jsBuild = () => {
-    return gulp.src('./src/js/main.js')
+    return gulp.src('./src/js/**/*.js')
+        .pipe(concat('main.js'))
         .pipe(minifyjs())
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'))
