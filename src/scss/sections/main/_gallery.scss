@@ -17,6 +17,7 @@
     font-weight: bold;
     font-size: 42px;
     color: $secondary-dark;
+    padding: 2vh 0;
   }
   &__button {
     font-size: 14px;
@@ -25,9 +26,10 @@
     color: $text-color-white;
     font-weight: bold;
     border: none;
-    padding: 21px 32px;
     border-radius: 3px;
-    //margin: 35px 358px 340px 62px;
+    width: 140px;
+    height: 50px;
+
   }
   &__background {
    object-fit: contain;
@@ -35,4 +37,10 @@
 }
 .own-fa-dollar:before {
   color: $gallery-button-color;
+}
+
+@media (max-width: 480px) {
+  .hover {
+    display: none;
+  }
 }
