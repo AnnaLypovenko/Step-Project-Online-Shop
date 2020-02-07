@@ -1,6 +1,5 @@
 .blog {
   margin-bottom:100px;
-
 }
 .blog-title {
   font-size: 26px;
@@ -10,7 +9,7 @@
   color: $secondary-dark;
 }
 
-.blog-title-block {
+.blog-title-block:hover {
 
 }
 .rounded-right {
@@ -85,17 +84,29 @@ line-height: normal;
   position: absolute;
 
 }
-
-
-@media (max-width: 767px) {
-  .page-header, .control-box {
-    text-align: center;
+.visible {
+  @include mobile-landscape {
+   display: none;
   }
 }
-/* Mobile Only */
-@media (max-width: 479px) {
-  .caption {
-    word-break: break-all;
+.not-visible{
+ display: none;
+  @include mobile-landscape {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: -70px;
   }
 }
+//@media (max-width: 767px) {
+//  .page-header, .control-box {
+//    text-align: center;
+//  }
+//}
+///* Mobile Only */
+//@media (max-width: 479px) {
+//  .caption {
+//    word-break: break-all;
+//  }
+//}
 

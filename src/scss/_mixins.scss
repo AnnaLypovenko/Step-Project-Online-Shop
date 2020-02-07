@@ -1,17 +1,22 @@
+@mixin tablet-landscape {
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
 
-@mixin tablet  {
+@mixin tablet {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin mobile-landscape {
-  @media screen and (max-width: 576px){
-  @content;
-   }
+  @media screen and (max-width: 576px) {
+    @content;
+  }
 }
 
-@mixin mobile  {
+@mixin mobile {
   @media screen and (max-width: 480px) {
     @content;
   }

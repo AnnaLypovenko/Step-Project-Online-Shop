@@ -59,4 +59,6 @@ const watch = () => {
     });
 };
 gulp.task('dev', watch);
-gulp.task('build', gulp.series(scssBuild, jsBuild, imagesBuild, buildHTML));
+gulp.task('build', gulp.series(cleanDist, scssBuild, jsBuild, imagesBuild, buildHTML));
+
+

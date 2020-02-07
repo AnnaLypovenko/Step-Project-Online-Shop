@@ -2,6 +2,7 @@
   background: url("../../img/stocks/1.jpg") no-repeat;
   width: 555px;
   height: 420px;
+  vertical-align: middle;
   color: $text-color-white;
 
   &__overlay {
@@ -60,7 +61,8 @@
       background: url("../../img/stocks/BG.png") no-repeat;
       display: block;
       position: relative;
-
+      margin-left: auto;
+      margin-right: auto;
       width: 555px;
       height: 195px;
 
